@@ -1,0 +1,79 @@
+@use './variables' as vars;
+
+@font-face {
+  font-family: 'Inter';
+  src: url(/src/assets/fonts/Inter-Regular.woff2);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url(/src/assets/fonts/Inter-Medium.woff2);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url(/src/assets/fonts/Inter-SemiBold.woff2);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+  height: auto;
+  min-height: 100vh;
+
+  background-image: url(../assets/images/dots.svg),
+    url(../assets/images/dots-2.svg), url(../assets/images/dots-2.svg),
+    url(../assets/images/dots-3.svg);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: left 10px top 90vh, right 10px top 220vh,
+    right 10px top 440vh, left 10px top 530vh;
+}
+body.light {
+  color: #{vars.$darkColor};
+  background-color: #{vars.$lightColor};
+  transition: all 0.3s ease;
+}
+body.dark {
+  color: #{vars.$lightColor};
+  background-color: #{vars.$darkColor};
+  transition: all 0.3s ease;
+}
+
+.accentWord {
+  font-weight: 600;
+  color: #{vars.$accentColor};
+}
+
+@media (max-width: 1350px) {
+  body {
+    background-image: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    margin: 0;
+  }
+}

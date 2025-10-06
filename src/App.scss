@@ -1,0 +1,28 @@
+@use './styles/mixins';
+@use './styles/variables' as vars;
+
+main {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  flex: 1;
+}
+
+.site {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  @include mixins.flex-center;
+  flex-direction: column;
+  max-width: 1190px;
+  padding: 0 20px;
+  position: relative;
+  overflow: visible;
+  margin: 0 auto;
+}

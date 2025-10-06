@@ -1,0 +1,47 @@
+@use '../../../styles/variables' as vars;
+
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  max-width: 900px;
+  line-height: 1.1;
+}
+
+.heroDesc {
+  margin: 30px 0;
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 650px;
+  line-height: 1.5;
+}
+.activeWord {
+  color: #{vars.$accentColor};
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 48px;
+    line-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .heroDesc {
+    font-size: 16px;
+    margin: 20px 0;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+}

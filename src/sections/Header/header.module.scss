@@ -1,0 +1,95 @@
+@use '../../styles/mixins';
+@use '../../styles/variables' as vars;
+
+.header {
+  @include mixins.flex-space-between;
+  width: 100%;
+  max-width: 1190px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  z-index: 9;
+
+  transition: all 0.3s ease;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+  padding: auto 0;
+  width: auto;
+  height: 30px;
+}
+
+.navList {
+  @include mixins.flex-space-between;
+  gap: clamp(16px, 4vw, 40px);
+}
+
+.navList li a {
+  color: inherit;
+  font-weight: 500;
+}
+.navList li a {
+  &:hover {
+    color: vars.$accentColor;
+  }
+}
+
+.btnTransparent {
+  border: 3px solid #{vars.$accentColor};
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: #{vars.$accentColor};
+  font-weight: 600;
+  background: transparent;
+}
+
+.btnTransparent {
+  &:hover {
+    background: #{vars.$accentColor};
+    color: #{vars.$lightColor};
+  }
+}
+
+.heroBtn {
+  display: flex;
+}
+
+.burgerIcon {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+}
+
+.headerDark.sticky {
+  background-color: rgba($color: vars.$darkColor, $alpha: 0.8);
+  transition: all 0.3s ease;
+}
+
+.headerLight.sticky {
+  background-color: rgba($color: vars.$lightColor, $alpha: 0.8);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .navList {
+    display: none;
+  }
+
+  .btnTransparent {
+    display: none;
+  }
+
+  .burgerIcon {
+    display: block;
+    background-color: transparent;
+  }
+}

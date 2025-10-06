@@ -1,0 +1,25 @@
+@use '../../../styles/variables' as vars;
+.projectCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.tag {
+  color: #{vars.$accentColor};
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #{vars.$accentColor};
+  padding: 4px 8px;
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .projectCards {
+    grid-template-columns: 1fr;
+    grid-column-gap: 30px;
+  }
+}

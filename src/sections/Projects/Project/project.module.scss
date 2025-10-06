@@ -1,0 +1,81 @@
+@use '../../../styles/variables' as vars;
+
+.projectPicture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #888888;
+}
+
+.tags {
+  margin: 20px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  color: #{vars.$accentColor};
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #{vars.$accentColor};
+  padding: 4px 8px;
+  border-radius: 50px;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+.projectTitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+a.projectLinks {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #{vars.$accentColor};
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.projectCard:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.projectCard:nth-child(3) {
+  transition-delay: 0.1s;
+}
+
+.projectCard:nth-child(4) {
+  transition-delay: 0.2s;
+}
+
+@media (max-width: 768px) {
+  .linksContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .projectTitile {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .projectCard {
+    transition-delay: 0;
+  }
+}

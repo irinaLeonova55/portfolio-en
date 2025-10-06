@@ -1,0 +1,6 @@
+@use '../../styles/variables' as vars;
+
+nav ul li.activeSection a {
+  color: #{vars.$accentColor};
+  font-weight: 600;
+}

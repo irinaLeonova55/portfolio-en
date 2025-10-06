@@ -1,0 +1,21 @@
+@use '../../../styles/variables' as vars;
+
+.headerLanguage button {
+  background: transparent;
+}
+
+.noActiveWord {
+  color: #999999;
+  font-weight: 400;
+}
+
+.activeWord {
+  color: inherit; // берёт цвет у родителя (body или div)
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  .headerLanguage button {
+    font-size: 12px;
+  }
+}

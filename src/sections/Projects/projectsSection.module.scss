@@ -1,0 +1,33 @@
+@use '../../styles/variables' as vars;
+
+.projectSection {
+  width: 100%;
+  margin-bottom: 200px;
+  padding-top: 100px;
+}
+
+.accentWord {
+  color: #{vars.$accentColor};
+  font-weight: 600;
+}
+
+@media (max-width: 1350px) {
+  .projectSection {
+    margin-bottom: 100px;
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectSection {
+    margin-bottom: 70px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectSection {
+    margin-bottom: 60px;
+    padding-top: 30px;
+  }
+}

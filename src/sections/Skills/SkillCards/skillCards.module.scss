@@ -1,0 +1,13 @@
+.skillCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 40px;
+}
+
+@media (max-width: 480px) {
+  .skillCards {
+    grid-column-gap: 40px;
+    margin-top: 20px;
+  }
+}

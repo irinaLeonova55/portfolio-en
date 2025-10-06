@@ -1,0 +1,35 @@
+@use '../../styles/variables' as vars;
+
+.accentWord {
+  color: #{vars.$accentColor};
+  font-weight: 600;
+}
+
+.skillsSection {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 90px;
+  margin-bottom: 200px;
+  padding-top: 100px;
+}
+@media (max-width: 1350px) {
+  .skillsSection {
+    margin-bottom: 100px;
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skillsSection {
+    grid-template-columns: 1fr;
+    margin-bottom: 70px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillsSection {
+    margin-bottom: 60px;
+    padding-top: 30px;
+  }
+}

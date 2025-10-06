@@ -1,0 +1,94 @@
+@use '../../styles/variables' as vars;
+@use '../../styles/mixins';
+
+.accentWord {
+  color: #{vars.$accentColor};
+  font-weight: 600;
+}
+
+.aboutSection {
+  max-width: 900px;
+  @include mixins.flex-center;
+  gap: 50px;
+  padding-top: 100px;
+  margin: 0 auto 200px;
+
+  img {
+    width: 320px;
+    height: 320px;
+    border: 3px solid #{vars.$accentColor};
+    border-radius: 200px;
+  }
+}
+
+.firstDesc {
+  padding-bottom: 20px;
+}
+
+.secondDesc {
+  padding-bottom: 20px;
+}
+
+.btnTransparent {
+  border: 3px solid #{vars.$accentColor};
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 8px;
+  color: #{vars.$accentColor};
+  font-weight: 600;
+  background: transparent;
+
+  &:hover {
+    background: #{vars.$accentColor};
+    color: #{vars.$lightColor};
+  }
+}
+
+@media (max-width: 1350px) {
+  .aboutSection {
+    margin-bottom: 100px;
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    margin-bottom: 70px;
+    align-items: start;
+    padding-top: 50px;
+
+    gap: 30px;
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutSection {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutSection {
+    margin-bottom: 60px;
+    padding-top: 30px;
+  }
+
+  .btnTransparent {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
