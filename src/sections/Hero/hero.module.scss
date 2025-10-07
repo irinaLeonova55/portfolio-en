@@ -135,7 +135,7 @@
   .heroSocialList {
     flex-direction: row;
     justify-content: start;
-    margin-top: 20px;
+    margin-top: 30px;
 
     li {
       a {
@@ -161,7 +161,7 @@
 
 @media (max-width: 480px) {
   .hero {
-    padding-top: 30px;
+    padding-top: 60px;
   }
 
   .btnSolid {
