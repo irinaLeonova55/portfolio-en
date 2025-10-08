@@ -1,6 +1,7 @@
 @use '../../../styles/variables' as vars;
 
-.headerLanguage button {
+.headerLanguage a {
+  font-size: 14px;
   background: transparent;
 }
 

@@ -1,8 +1,9 @@
 {
-  "name": "portfolio",
+  "name": "website-portfolio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://irinaLeonova55.github.io/portfolio-en/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -25,6 +26,6 @@
     "globals": "^16.0.0",
     "sass-embedded": "^1.92.1",
     "vite": "^6.3.1"
-  },
-  "homepage": "https://irinaLeonova55.github.io/portfolio-en/"
+  }
+  
 }
