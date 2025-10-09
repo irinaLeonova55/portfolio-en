@@ -13,7 +13,9 @@ import BurgerMenu from './sections/BurgerMenu/BurgerMenu';
 
 function App() {
   const [lang, setLang] = useState('en'); //переключение языка
-  const [mode, setMode] = useState('light'); //переключение темы
+  const [mode, setMode] = useState(
+    () => localStorage.getItem('mode') || 'light'
+  ); //переключение темы
   const [isBurger, setIsBurger] = useState(false); //открытие и закрытие бургер меню
   const [activeSection, setActiveSection] = useState(''); //подсветка активного блока меню
 
@@ -21,16 +23,19 @@ function App() {
   useEffect(() => {
     document.body.classList.remove('light', 'dark');
     document.body.classList.add(mode);
+    localStorage.setItem('mode', mode);
   }, [mode]);
 
   //переключение на светлую тему
   function chooseLightTheme() {
     setMode('light');
+    localStorage.setItem('mode', 'light');
   }
 
   //переключение на темную тему
   function chooseDarkTheme() {
     setMode('dark');
+    localStorage.setItem('mode', 'dark');
   }
 
   //открытие бургер меню

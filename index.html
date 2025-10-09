@@ -44,22 +44,6 @@
     />
 
     <link
-      rel="preload"
-      href="/src/assets/fonts/Inter-Medium.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="preload"
-      href="/src/assets/fonts/Inter-SemiBold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-
-    <link
       rel="icon"
       type="image/svg"
       sizes="32x25"
@@ -71,6 +55,12 @@
       sizes="16x12"
       href="./src/assets/icons/favicon16.svg"
     />
+    <script>
+      (function () {
+        const savedMode = localStorage.getItem('mode') || 'light';
+        document.documentElement.classList.add(savedMode);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
