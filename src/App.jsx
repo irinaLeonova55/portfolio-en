@@ -53,7 +53,6 @@ function App() {
     const sections = document.querySelectorAll('section'); //ссылки на все секции
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log(entries);
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id); //id нужной секции
