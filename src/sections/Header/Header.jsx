@@ -61,7 +61,7 @@ function Header({
           chooseLightTheme={chooseLightTheme}
           chooseDarkTheme={chooseDarkTheme}
         />
-        <Button className={styles.btnTransparent} />
+        {/*<Button className={styles.btnTransparent} />*/}
         <button className={styles.burgerIcon} onClick={openBurger}>
           <img src={burger} alt="Open menu" />
         </button>

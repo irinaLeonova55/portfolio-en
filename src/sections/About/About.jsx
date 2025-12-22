@@ -28,7 +28,6 @@ function About({ supertitle, headline, subtitle, className }) {
             </>
           }
         />
-
         <p
           className={`${styles.firstDesc} ${animationStyles.fadeIn} ${
             isAboutVisible ? animationStyles.fadeInVisible : ''
@@ -49,12 +48,12 @@ function About({ supertitle, headline, subtitle, className }) {
           aesthetic interfaces while focusing on frontend projects for my
           portfolio and growing into a Middle-level developer.
         </p>
-        <Button
+        {/*<Button
           className={`${styles.btnTransparent} ${animationStyles.scaleUp} ${
             isAboutVisible ? animationStyles.scaleUpVisible : ''
           }`}
-          style={{ '--delay': '0.6s' }}
-        />
+        style={{ '--delay': '0.6s' }}
+        />*/}
       </div>
     </section>
   );

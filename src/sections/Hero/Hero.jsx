@@ -16,12 +16,12 @@ function Hero() {
       <div ref={heroRef}>
         <HeroContent />
         <div className={styles.heroBtn}>
-          <Button
+          {/*<Button
             className={`${styles.btnSolid} ${animationStyles.scaleUp} ${
               isHeroVisible ? animationStyles.scaleUpVisible : ''
             }`}
             style={{ '--delay': '0.3s' }}
-          />
+          />*/}
           <a
             className={`${styles.linkPortfolio} ${animationStyles.fadeIn} ${
               isHeroVisible ? animationStyles.fadeInVisible : ''

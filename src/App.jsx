@@ -82,7 +82,7 @@ function App() {
           <Skills id="stack" />
           <ProjectSection id="portfolio" />
           <About id="about" />
-          <ContactsSection mode={mode} id="contacts" />
+          {/*<ContactsSection mode={mode} id="contacts" />*/}
         </main>
         <Footer mode={mode} />
       </div>
