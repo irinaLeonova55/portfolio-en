@@ -33,7 +33,7 @@ const icons = [
     black: linkedinBlack,
     white: linkedinWhite,
   },
-  {
+  /*{
     id: 3,
     name: 'Telegram',
     href: 'https://t.me/up_to_web',
@@ -48,7 +48,8 @@ const icons = [
     purple: instagramPurple,
     black: instagramBlack,
     white: instagramWhite,
-  },
+  }*/
+  ,
 ];
 
 const Social = forwardRef(
