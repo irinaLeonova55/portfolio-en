@@ -1,3 +1,5 @@
+import lightanalytics from '../assets/images/lightanalytics.png';
+import optiadsai from '../assets/images/optiadsai.png';
 import portfolio from '../assets/images/portfolio.png';
 import todo from '../assets/images/todo.jpg';
 import mobileapp from '../assets/images/mobileapp.jpg';
@@ -6,6 +8,32 @@ import accordion from '../assets/images/accordion.jpg';
 export const projects = [
   {
     id: 1,
+    img: lightanalytics,
+    tags: [
+      'Website',
+      'React',
+      'JavaScript (ES6+)',
+      'SCSS Modules',
+      'Vite',
+      'Feature-Sliced Design (FSD)',
+      'Framer motion',
+    ],
+    title: 'SaaS Landing Page with Focus on UI Stability',
+    desc: 'Developed a SaaS landing page with emphasis on layout stability, smooth UI behavior, and performance under real-world conditions. Focused on eliminating rendering issues, ensuring consistency across environments, and maintaining predictable component behavior.',
+    previewLink: 'https://lightanalytics.ru/promo/',
+    codeLink: 'https://github.com/irinaLeonova55/Light-Analytics',
+  },
+  {
+    id: 2,
+    img: optiadsai,
+    tags: ['Website', 'React', 'JavaScript (ES6+)', 'Tailwind CSS', 'Vite'],
+    title: 'SAAS landing page with interactive calculator',
+    desc: 'Landing page for a SaaS concept focused on AI-driven advertising optimization. The main feature is an interactive calculator that allows users to estimate potential lead growth based on advertising metrics such as budget, CPC, and conversion rate. The interface updates in real time and visualizes the difference between current and optimized performance.',
+    previewLink: 'https://www.optiadsai.com/',
+    codeLink: 'https://github.com/irinaLeonova55/saas',
+  },
+  {
+    id: 3,
     img: portfolio,
     tags: ['Website', 'React', 'SCSS Modules', 'IntersectionObserver API'],
     title: 'Portfolio Website',
@@ -13,17 +41,9 @@ export const projects = [
     previewLink: '#',
     codeLink: '#',
   },
+
   {
-    id: 2,
-    img: todo,
-    tags: ['Mobile App', 'React'],
-    title: 'ToDo App',
-    desc: 'A minimalist task management app. Users can add, remove, and mark tasks as completed. This project demonstrates working with React state management and basic animations.',
-    previewLink: 'https://irinaleonova55.github.io/todo-react/',
-    codeLink: 'https://github.com/irinaLeonova55/todo-react',
-  },
-  {
-    id: 3,
+    id: 4,
     img: mobileapp,
     tags: ['Mobile App', 'Vanilla JS', 'API'],
     title: 'Weather App',
@@ -31,8 +51,8 @@ export const projects = [
     previewLink: 'https://irinaleonova55.github.io/wheather-mobile-app/',
     codeLink: 'https://github.com/irinaLeonova55/wheather-mobile-app',
   },
-  {
-    id: 4,
+  /*{
+    id: 5,
     img: accordion,
     tags: ['Website', 'React'],
     title: 'FAQ Accordion',
@@ -40,4 +60,14 @@ export const projects = [
     previewLink: 'https://irinaleonova55.github.io/faq-s-react/',
     codeLink: 'https://github.com/irinaLeonova55/faq-s-react',
   },
+  
+    {
+    id: 6,
+    img: todo,
+    tags: ['Mobile App', 'React'],
+    title: 'ToDo App',
+    desc: 'A minimalist task management app. Users can add, remove, and mark tasks as completed. This project demonstrates working with React state management and basic animations.',
+    previewLink: 'https://irinaleonova55.github.io/todo-react/',
+    codeLink: 'https://github.com/irinaLeonova55/todo-react',
+  },*/
 ];

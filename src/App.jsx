@@ -14,7 +14,7 @@ import BurgerMenu from './sections/BurgerMenu/BurgerMenu';
 function App() {
   const [lang, setLang] = useState('en'); //переключение языка
   const [mode, setMode] = useState(
-    () => localStorage.getItem('mode') || 'light'
+    () => localStorage.getItem('mode') || 'light',
   ); //переключение темы
   const [isBurger, setIsBurger] = useState(false); //открытие и закрытие бургер меню
   const [activeSection, setActiveSection] = useState(''); //подсветка активного блока меню
@@ -59,7 +59,7 @@ function App() {
           }
         });
       },
-      { threshold: 0.3 } // секция становится активной, если видно 30%
+      { threshold: 0.3 }, // секция становится активной, если видно 30%
     );
     sections.forEach((section) => observer.observe(section));
     return () => sections.forEach((section) => observer.unobserve(section));
@@ -82,7 +82,7 @@ function App() {
           <Skills id="stack" />
           <ProjectSection id="portfolio" />
           <About id="about" />
-          {/*<ContactsSection mode={mode} id="contacts" />*/}
+          <ContactsSection mode={mode} id="contacts" />
         </main>
         <Footer mode={mode} />
       </div>

@@ -5,13 +5,14 @@ import gitIcon from '../assets/icons/git.svg';
 import analyticsIcon from '../assets/icons/analytics.svg';
 import figmaIcon from '../assets/icons/figma.svg';
 import seoIcon from '../assets/icons/seo.svg';
+import tailwindIcon from '../assets/icons/tailwind.svg';
 
 export const skills = [
   {
     id: 1,
-    icon: saasIcon,
-    title: 'SCSS / SAAS',
-    desc: 'Creating maintainable and scalable styles with variables, mixins, and nesting.',
+    icon: reactIcon,
+    title: 'React',
+    desc: 'Building dynamic and interactive user interfaces with reusable components.',
   },
 
   {
@@ -22,30 +23,37 @@ export const skills = [
   },
   {
     id: 3,
-    icon: reactIcon,
-    title: 'React',
-    desc: 'Building dynamic and interactive user interfaces with reusable components.',
+    icon: tailwindIcon,
+    title: 'Tailwind CSS',
+    desc: 'for fast, utility-first styling and consistent UI development.',
   },
   {
     id: 4,
+    icon: saasIcon,
+    title: 'SCSS / SAAS',
+    desc: 'Creating maintainable and scalable styles with variables, mixins, and nesting.',
+  },
+
+  {
+    id: 5,
     icon: gitIcon,
     title: 'Git / GitHub',
     desc: 'Managing code versions and collaborating through GitHub.',
   },
   {
-    id: 5,
+    id: 6,
     icon: analyticsIcon,
     title: 'Google Analytics',
     desc: 'Setting up tracking to analyze website performance and user behavior.',
   },
   {
-    id: 6,
+    id: 7,
     icon: figmaIcon,
     title: 'Figma',
     desc: 'Converting design mockups into responsive and functional layouts.',
   },
   {
-    id: 7,
+    id: 8,
     icon: seoIcon,
     title: 'SEO',
     desc: 'Optimizing websites for better visibility and higher rankings in search engines.',
