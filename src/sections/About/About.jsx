@@ -4,7 +4,7 @@ import Headline from '../../components/Headline/Headline';
 import foto from '../../assets/images/foto.png';
 import Button from '../../components/Button/Button';
 
-import animationStyles from '../../styles/fadein.module.scss';
+import animationStyles from '../../styles/temp.module.scss';
 import useFadeInOnScroll from '../../hooks/useFadeInOnScroll';
 
 function About({ supertitle, headline, subtitle, className }) {
