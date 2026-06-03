@@ -20,7 +20,7 @@ main {
 .App {
   @include mixins.flex-center;
   flex-direction: column;
-  max-width: 1190px;
+  max-width: 1280px;
   padding: 0 20px;
   position: relative;
   overflow: visible;

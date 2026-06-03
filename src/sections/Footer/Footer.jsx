@@ -7,7 +7,7 @@ function Footer({ mode }) {
     <footer
       className={mode === 'light' ? styles.footerLight : styles.footerDark}
     >
-      <span>© 2025 All Rights Reserved</span>
+      <span>© 2026 All Rights Reserved</span>
       <Social
         variant={mode === 'light' ? 'black' : 'white'}
         styleSocial={styles.footerSocial}

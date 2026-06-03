@@ -5,7 +5,8 @@
   position: relative;
   width: 100%;
   @include mixins.flex-space-between;
-  padding: 150px 0;
+  align-items: center;
+  height: 90svh;
   margin: 70px 0 50px;
   overflow: visible;
   z-index: 1;
@@ -131,6 +132,7 @@
   .hero {
     flex-direction: column;
     align-items: start;
+    height: auto;
   }
 
   .heroSocialList {

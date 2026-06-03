@@ -9,10 +9,10 @@ h1 {
 }
 
 .heroDesc {
-  margin: 30px 0;
+  margin: 20px 0 30px;
   font-size: 20px;
   font-weight: 400;
-  max-width: 650px;
+  max-width: 750px;
   line-height: 1.5;
 }
 .activeWord {
@@ -22,7 +22,7 @@ h1 {
 
 @media (max-width: 1024px) {
   h1 {
-    font-size: 48px;
+    font-size: 40px;
     line-height: auto;
   }
 }

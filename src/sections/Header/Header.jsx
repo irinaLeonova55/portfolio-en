@@ -29,7 +29,7 @@ function Header({
         // Если элемент видно, ставится false, если вышел из зоны видимости true
         setIsSticky(!entry.isIntersecting);
       },
-      { threshold: 0.1 } // 10% пересечения
+      { threshold: 0.1 }, // 10% пересечения
     );
 
     if (heroRef.current) {
@@ -55,13 +55,13 @@ function Header({
           </a>
         </div>
         <Nav listStyle={styles.navList} activeSection={activeSection} />
-        <Language lang={lang} setLang={setLang} />
+        {/*<Language lang={lang} setLang={setLang} />*/}
         <Mode
           mode={mode}
           chooseLightTheme={chooseLightTheme}
           chooseDarkTheme={chooseDarkTheme}
         />
-        {/*<Button className={styles.btnTransparent} />*/}
+        <Button className={styles.btnTransparent} />
         <button className={styles.burgerIcon} onClick={openBurger}>
           <img src={burger} alt="Open menu" />
         </button>

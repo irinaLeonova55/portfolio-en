@@ -14,16 +14,18 @@ function Project({ image, title, desc, tags, previewLink, codeLink }) {
       }`}
     >
       <img className={styles.projectPicture} src={image} alt={title} />
-      <ul className={styles.tags}>{tags}</ul>
-      <h3 className={styles.projectTitle}>{title}</h3>
-      <p className={styles.projectDesc}>{desc}</p>
-      <div className={styles.linksContainer}>
-        <a className={styles.projectLinks} href={previewLink}>
-          Live Preview
-        </a>
-        <a className={styles.projectLinks} href={codeLink}>
-          View Code
-        </a>
+      <div>
+        <h3 className={styles.projectTitle}>{title}</h3>
+        <ul className={styles.tags}>{tags}</ul>
+        <p className={styles.projectDesc}>{desc}</p>
+        <div className={styles.linksContainer}>
+          <a className={styles.projectLinks} href={previewLink}>
+            Live Preview
+          </a>
+          <a className={styles.projectLinks} href={codeLink}>
+            View Code
+          </a>
+        </div>
       </div>
     </div>
   );

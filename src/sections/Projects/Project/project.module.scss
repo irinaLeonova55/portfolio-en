@@ -1,5 +1,11 @@
 @use '../../../styles/variables' as vars;
 
+.projectCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
 .projectPicture {
   width: 100%;
   max-width: 100%;
@@ -76,6 +82,8 @@ a.projectLinks {
   }
 
   .projectCard {
+    grid-template-columns: 1fr;
+    gap: 20px;
     transition-delay: 0;
   }
 }

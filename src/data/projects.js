@@ -4,10 +4,28 @@ import portfolio from '../assets/images/portfolio.png';
 import todo from '../assets/images/todo.jpg';
 import mobileapp from '../assets/images/mobileapp.jpg';
 import accordion from '../assets/images/accordion.jpg';
+import volume from '../assets/images/volume.jpg';
 
 export const projects = [
   {
     id: 1,
+    img: volume,
+    tags: [
+      'Website',
+      'React',
+      'JavaScript (ES6+)',
+      'Tailwind CSS',
+      'Vite',
+      'TypeScript',
+      'React Router',
+    ],
+    title: 'Art Collection Platform for a Mural Studio',
+    desc: 'A responsive artwork catalog designed for a mural art studio, allowing visitors to explore projects through real-time search and multiple filtering options. The application features dynamic routing, smooth page transitions, and an interface focused on showcasing visual content without compromising performance',
+    previewLink: 'https://www.volumspace.com/',
+    codeLink: 'https://github.com/irinaLeonova55/volum-mural-studio',
+  },
+  {
+    id: 2,
     img: lightanalytics,
     tags: [
       'Website',
@@ -18,21 +36,21 @@ export const projects = [
       'Feature-Sliced Design (FSD)',
       'Framer motion',
     ],
-    title: 'SaaS Landing Page with Focus on UI Stability',
+    title: 'Marketplace Analytics SaaS Landing Page',
     desc: 'Developed a SaaS landing page with emphasis on layout stability, smooth UI behavior, and performance under real-world conditions. Focused on eliminating rendering issues, ensuring consistency across environments, and maintaining predictable component behavior.',
     previewLink: 'https://lightanalytics.ru/promo/',
     codeLink: 'https://github.com/irinaLeonova55/Light-Analytics',
   },
   {
-    id: 2,
+    id: 3,
     img: optiadsai,
     tags: ['Website', 'React', 'JavaScript (ES6+)', 'Tailwind CSS', 'Vite'],
-    title: 'SAAS landing page with interactive calculator',
+    title: 'SaaS Pricing Calculator with Dynamic Cost Estimation',
     desc: 'Landing page for a SaaS concept focused on AI-driven advertising optimization. The main feature is an interactive calculator that allows users to estimate potential lead growth based on advertising metrics such as budget, CPC, and conversion rate. The interface updates in real time and visualizes the difference between current and optimized performance.',
     previewLink: 'https://www.optiadsai.com/',
     codeLink: 'https://github.com/irinaLeonova55/saas',
   },
-  {
+  /*{
     id: 3,
     img: portfolio,
     tags: ['Website', 'React', 'SCSS Modules', 'IntersectionObserver API'],
@@ -50,7 +68,7 @@ export const projects = [
     desc: 'A weather application that displays forecasts based on user-selected cities. Data is fetched from an open API and updates in real time. The interface is fully responsive and user-friendly.',
     previewLink: 'https://irinaleonova55.github.io/wheather-mobile-app/',
     codeLink: 'https://github.com/irinaLeonova55/wheather-mobile-app',
-  },
+  },*/
   /*{
     id: 5,
     img: accordion,

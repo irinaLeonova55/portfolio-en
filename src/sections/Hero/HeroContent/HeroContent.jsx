@@ -12,9 +12,9 @@ function HeroContent() {
           isVisible ? animationStyles.heroTitleVisible : ''
         }`}
       >
-        <span className={styles.activeWord}>Creative Frontend</span> Developer
-        blending
-        <span className={styles.activeWord}> design and technology</span>
+        Creative <span className={styles.activeWord}>Frontend Developer</span>{' '}
+        bridging design, technology and{' '}
+        <span className={styles.activeWord}> user behavior</span>
         <br />
       </h1>
       <p
@@ -23,8 +23,9 @@ function HeroContent() {
         }`}
         style={{ '--delay': '0.2s' }}
       >
-        Hi there 🖐 I’m Irina Leonova. I create clean, responsive websites with
-        a focus on user experience
+        Hi, I'm Irina Leonova. With experience in both marketing and frontend
+        development, I create websites that are visually engaging, technically
+        solid, and built with real users in mind.
       </p>
     </div>
   );

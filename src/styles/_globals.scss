@@ -42,12 +42,15 @@ body {
   height: auto;
   min-height: 100vh;
 
-  background-image: url(../assets/images/dots.svg),
-    url(../assets/images/dots-2.svg), url(../assets/images/dots-2.svg),
-    url(../assets/images/dots-3.svg);
+  background-image:
+    url(../assets/images/dots.svg), url(../assets/images/dots-2.svg),
+    url(../assets/images/dots-2.svg), url(../assets/images/dots-3.svg);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: left 10px top 90vh, right 10px top 220vh,
-    right 10px top 440vh, left 10px top 530vh;
+  background-position:
+    left 10px top 90vh,
+    right 10px top 220vh,
+    right 10px top 440vh,
+    left 10px top 530vh;
 }
 body.light {
   color: #{vars.$darkColor};

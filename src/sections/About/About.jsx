@@ -34,9 +34,10 @@ function About({ supertitle, headline, subtitle, className }) {
           }`}
           style={{ '--delay': '0.5s' }}
         >
-          I enjoy turning ideas into responsive and visually appealing websites
-          that combine design and code. I value clean, well-structured solutions
-          and have experience with responsive layout, React, SCSS, and Git.
+          I started my career in digital marketing, where I learned how design,
+          content, and user behavior shape the success of a product. That
+          experience continues to influence the way I build websites today —
+          with equal attention to aesthetics, usability, and purpose.
         </p>
         <p
           className={`${styles.secondDesc} ${animationStyles.fadeIn} ${
@@ -44,9 +45,11 @@ function About({ supertitle, headline, subtitle, className }) {
           }`}
           style={{ '--delay': '0.6s' }}
         >
-          Interested in web design, I aim to blend technical precision with
-          aesthetic interfaces while focusing on frontend projects for my
-          portfolio and growing into a Middle-level developer.
+          As a frontend developer, I enjoy bringing visual ideas to life through
+          code. I'm particularly interested in creative development, interactive
+          experiences, and the intersection of design and technology. My goal is
+          to create digital experiences that are not only functional, but also
+          leave a lasting impression.
         </p>
         {/*<Button
           className={`${styles.btnTransparent} ${animationStyles.scaleUp} ${
