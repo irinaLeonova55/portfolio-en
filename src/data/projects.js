@@ -1,5 +1,5 @@
 import lightanalytics from '../assets/images/lightanalytics.png';
-import optiadsai from '../assets/images/optiadsai.png';
+import optiadsai from '../assets/images/optiadsai.jpg';
 import portfolio from '../assets/images/portfolio.png';
 import todo from '../assets/images/todo.jpg';
 import mobileapp from '../assets/images/mobileapp.jpg';
@@ -45,7 +45,7 @@ export const projects = [
     id: 3,
     img: optiadsai,
     tags: ['Website', 'React', 'JavaScript (ES6+)', 'Tailwind CSS', 'Vite'],
-    title: 'SaaS Pricing Calculator with Dynamic Cost Estimation',
+    title: 'SaaS Landing Page with Dynamic Lead Calculator',
     desc: 'Landing page for a SaaS concept focused on AI-driven advertising optimization. The main feature is an interactive calculator that allows users to estimate potential lead growth based on advertising metrics such as budget, CPC, and conversion rate. The interface updates in real time and visualizes the difference between current and optimized performance.',
     previewLink: 'https://www.optiadsai.com/',
     codeLink: 'https://github.com/irinaLeonova55/saas',
