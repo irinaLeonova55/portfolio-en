@@ -40,27 +40,51 @@ export const skills = [
     title: 'TypeScript',
     desc: 'Builds scalable and maintainable applications with strong typing, improving code reliability.',
   },
+    {
+    id: 6,
+    icon: typescriptIcon,
+    title: 'Three.js',
+    desc: '',
+  },
+    {
+    id: 7,
+    icon: typescriptIcon,
+    title: 'React Three Fiber',
+    desc: '',
+  },
+      {
+    id: 8,
+    icon: typescriptIcon,
+    title: 'GSAP',
+    desc: '',
+  },
+        {
+    id: 8,
+    icon: typescriptIcon,
+    title: 'Framer Motion',
+    desc: '',
+  },
 
-  {
+  /*{
     id: 6,
     icon: gitIcon,
     title: 'Git / GitHub',
     desc: 'Managing code versions and collaborating through GitHub.',
-  },
+  },*/
   {
-    id: 7,
+    id: 9,
     icon: analyticsIcon,
     title: 'Google Analytics',
     desc: 'Setting up tracking to analyze website performance and user behavior.',
   },
-  {
+  /*{
     id: 8,
     icon: figmaIcon,
     title: 'Figma',
     desc: 'Converting design mockups into responsive and functional layouts.',
-  },
+  },*/
   {
-    id: 9,
+    id: 10,
     icon: seoIcon,
     title: 'SEO',
     desc: 'Optimizing websites for better visibility and higher rankings in search engines.',

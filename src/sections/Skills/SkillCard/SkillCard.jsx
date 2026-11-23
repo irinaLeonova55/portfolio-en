@@ -12,9 +12,9 @@ function SkillCard({ icon, title, desc }) {
         isSkillVision ? animationStyle.skillVisible : ''
       }`}
     >
-      <img src={icon} className={styles.cardIcon} alt={title} />
+      {/*<img src={icon} className={styles.cardIcon} alt={title} />*/}
       <h3 className={styles.cardTitle}>{title}</h3>
-      <p className={styles.cardDesc}>{desc}</p>
+      {/*<p className={styles.cardDesc}>{desc}</p>*/}
     </div>
   );
 }
