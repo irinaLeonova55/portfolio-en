@@ -4,7 +4,7 @@ import portfolio from '../assets/images/portfolio.png';
 import todo from '../assets/images/todo.jpg';
 import mobileapp from '../assets/images/mobileapp.jpg';
 import accordion from '../assets/images/accordion.jpg';
-import volume from '../assets/images/volume.jpg';
+import volume from '../assets/images/volume.png';
 
 export const projects = [
   {
@@ -13,16 +13,18 @@ export const projects = [
     tags: [
       'Website',
       'React',
+      'React Three Fiber',
+      'Three.js',
+      'TypeScript',
       'JavaScript (ES6+)',
       'Tailwind CSS',
-      'Vite',
-      'TypeScript',
+      'Lenis',
       'React Router',
     ],
-    title: 'Art Collection Platform for a Mural Studio',
-    desc: 'A responsive artwork catalog designed for a mural art studio, allowing visitors to explore projects through real-time search and multiple filtering options. The application features dynamic routing, smooth page transitions, and an interface focused on showcasing visual content without compromising performance',
+    title: 'Art Collection Platform for a Sculpture Studio',
+    desc: 'A responsive artwork catalog designed for a sculpture art studio, allowing visitors to explore projects through real-time search and multiple filtering options. The application features dynamic routing, smooth page transitions, and an interface focused on showcasing visual content without compromising performance',
     previewLink: 'https://www.volumspace.com/',
-    codeLink: 'https://github.com/irinaLeonova55/volum-mural-studio',
+    codeLink: 'https://github.com/irinaLeonova55/volume-studio',
   },
   {
     id: 2,

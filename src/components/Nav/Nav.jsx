@@ -8,8 +8,6 @@ function Nav({ listStyle, onClick, activeSection }) {
     { label: 'Contacts', href: 'contacts' },
   ];
 
-  console.log('activeSection', activeSection)
-
   return (
     <nav className={styles.headerNav}>
       <ul className={listStyle}>

@@ -51,12 +51,6 @@ function About({ supertitle, headline, subtitle, className }) {
           to create digital experiences that are not only functional, but also
           leave a lasting impression.
         </p>
-        {/*<Button
-          className={`${styles.btnTransparent} ${animationStyles.scaleUp} ${
-            isAboutVisible ? animationStyles.scaleUpVisible : ''
-          }`}
-        style={{ '--delay': '0.6s' }}
-        />*/}
       </div>
     </section>
   );
